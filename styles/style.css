@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+
+    border: 1px solid blue;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    flex: 1 1 35%;
+}
+
+.main {
+    flex: 4 65%;
+}
