@@ -4,6 +4,11 @@
     border: 1px solid blue;
 }
 
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 .flex-container {
     height: 100vh;
     display: flex;
@@ -11,8 +16,30 @@
 
 .sidebar {
     flex: 1 1 35%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main {
     flex: 4 65%;
+}
+
+.logo {
+    height: 20%;
+
+    flex: 1 1 1;
+    position: relative;
+    top: 20%;
+}
+
+.credit {
+    flex: 1 1 1;
+    align-self: flex-end;
+
+    margin: 8px auto;
+
+    font-size: 1rem;
+    text-align: center;
 }
