@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 body {
@@ -24,6 +24,8 @@ body {
 
 .main {
     flex: 4 65%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .logo {
@@ -42,4 +44,64 @@ body {
 
     font-size: 1rem;
     text-align: center;
+}
+
+.main > p {
+    width: 80%;
+}
+
+.main > p {
+    margin-left: 40px;
+}
+
+form {
+    flex: 0;
+    flex-basis: 40%;
+
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form button {
+    margin: 5px 5px 5px 40px;
+
+    flex: 0;
+    align-self: flex-start;
+}
+
+.form-container {
+    flex: 0;
+}
+
+.form-data {
+    height: 100%;
+    width: 80%;
+    padding: 20px 0px;
+    margin-left: 40px;
+
+    flex: 0 80%;
+    align-self: flex-start;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    row-gap: 1px;
+}
+
+.form-data h2 {
+    flex: 1;
+    flex-basis: 100%;
+
+    margin: 8px auto;
+}
+
+.form-data div {
+    padding: 5px 15px 5px 0px;
+
+    flex: 1;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
 }
