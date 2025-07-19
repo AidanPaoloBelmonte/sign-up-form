@@ -11,6 +11,7 @@ body {
 
 .flex-container {
     height: 100vh;
+
     display: flex;
 }
 
@@ -23,9 +24,12 @@ body {
 }
 
 .main {
-    flex: 4 65%;
+    padding-top: 100px;
+
+    flex: 4 4 65%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow: auto;
 }
 
 .logo {
@@ -47,39 +51,43 @@ body {
 }
 
 .main > p {
-    width: 80%;
-}
-
-.main > p {
     margin-left: 40px;
+    margin-right: 35%;
+
+    flex: 0 1 auto;
 }
 
 form {
-    flex: 0;
-    flex-basis: 40%;
+    flex: 0 1 10%;
+    flex-basis: 10%;
 
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-self: flex-start;
 }
 
 form button {
     margin: 5px 5px 5px 40px;
 
-    flex: 0;
+    flex: 0 1 auto;
     align-self: flex-start;
 }
 
 .form-container {
-    flex: 0;
+    flex: 1 1 auto;
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .form-data {
-    height: 100%;
-    width: 80%;
     padding: 20px 0px;
     margin-left: 40px;
+    margin-right: 35%;
 
-    flex: 0 80%;
+    flex: 1 1 30%;
     align-self: flex-start;
 
     display: flex;
