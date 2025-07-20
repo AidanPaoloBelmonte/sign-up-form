@@ -16,20 +16,25 @@ body {
 }
 
 .sidebar {
-    flex: 1 1 35%;
+    flex: 1 1 30%;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    background-image: url(https://images.pexels.com/photos/2215534/pexels-photo-2215534.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
 }
 
 .main {
-    padding-top: 100px;
-
-    flex: 4 4 65%;
+    flex: 4 4 70%;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: auto;
+
+    background-color: #fafafa;
 }
 
 .logo {
@@ -38,16 +43,42 @@ body {
     flex: 1 1 1;
     position: relative;
     top: 20%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+    display: inline;
+    padding: 20px;
+}
+
+.logo p {
+    color: white;
+    font-size: 3rem;
 }
 
 .credit {
     flex: 1 1 1;
     align-self: flex-end;
 
+    padding: 1px;
     margin: 8px auto;
 
-    font-size: 1rem;
+    font-size: 0.8rem;
     text-align: center;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.credit a:link,
+.credit a:visited {
+    color: inherit;
+    text-decoration: underline;
 }
 
 .main > p {
@@ -55,6 +86,11 @@ body {
     margin-right: 35%;
 
     flex: 0 1 auto;
+}
+
+.introduction {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 form {
@@ -68,10 +104,20 @@ form {
 }
 
 form button {
+    padding: 10px 40px;
+    border: 0px;
+    border-radius: 5px;
     margin: 5px 5px 5px 40px;
+
+    box-shadow: 3px 3px 5px rgba(127, 127, 127, 0.3);
 
     flex: 0 1 auto;
     align-self: flex-start;
+
+    font-weight: bold;
+    color: white;
+
+    background-color: darkgreen;
 }
 
 .form-container {
@@ -80,6 +126,11 @@ form button {
 
     display: flex;
     flex-direction: column;
+
+    margin-bottom: 40px;
+
+    background-color: white;
+    box-shadow: 7px 3px 5px 1px rgba(127, 127, 127, 0.4);
 }
 
 .form-data {
@@ -102,6 +153,8 @@ form button {
     flex-basis: 100%;
 
     margin: 8px auto;
+
+    font-size: 1.2rem;
 }
 
 .form-data div {
@@ -112,4 +165,8 @@ form button {
 
     display: flex;
     flex-direction: column;
+}
+
+label {
+    font-size: 0.9rem;
 }
